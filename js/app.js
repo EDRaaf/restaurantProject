@@ -1,11 +1,12 @@
+//home variables
 const carouselSlider = document.querySelector(".carousel-slide");
 const carouselImages = document.querySelectorAll(".carousel-slide img");
 
-//buttons
+// home buttons
 const prevBtn = document.querySelector("#prevBtn");
 const nextBtn = document.querySelector("#nextBtn");
 
-//counter
+// home counter
 let counter = 0;
 let timer;
 const size = carouselImages[0].clientWidth;
@@ -20,7 +21,7 @@ function autoSlide() {
   carouselSlider.style.transform = "translateX(" + -size * counter + "px)";
 }
 
-//event listener
+// home event listener
 nextBtn.addEventListener("click", () => {
   if (counter === 8) return;
   counter++;
@@ -52,3 +53,14 @@ carouselSlider.addEventListener("transitionend", () => {
     carouselSlider.style.transform = "translateX(" + -size * counter + "px)";
   }
 });
+
+const rendang = {
+  name: "Rendang",
+  price: "AED 40",
+  description: "A spicy beef delicacy from Indonesia.",
+  tags: ["Indonesian", "Spicy", "Non-Vegetarian"],
+};
+
+function x() {
+  document.querySelectorAll("foodName").innerHTML = rendang.name;
+}
