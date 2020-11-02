@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy Eatery</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Start of side bar -->
+    <div class="sidenav">
+      <div class="logoContainer">
+        <a href="#home"
+          ><img
+            id="logo"
+            src="./images/restaurantLogo.png"
+            alt="Restaurant Logo"
+        /></a>
+      </div>
+      <div class="navLinks">
+        <ul>
+          <li><a href="#story">Story</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <footer class="sideNavFooter">
+        <p>Created by Ezy de Raaf</p>
+      </footer>
+    </div>
+    <!--End of side bar-->
+    <section id="home">
+      <div class="carousel-container">
+        <div id="leftSide"></div>
+        <div id="rightSide"></div>
+        <i class="fas fa-arrow-left" id="prevBtn"></i>
+        <i class="fas fa-arrow-right" id="nextBtn"></i>
+        <div class="carousel-slide">
+          <img src="./images/carousel7.jpg" id="lastClone" alt="" />
+          <img src="./images/carousel1.jpg" alt="" />
+          <img src="./images/carousel2.jpg" alt="" />
+          <img src="./images/carousel3.jpg" alt="" />
+          <img src="./images/carousel4.jpg" alt="" />
+          <img src="./images/carousel5.jpg" alt="" />
+          <img src="./images/carousel6.jpg" alt="" />
+          <img src="./images/carousel7.jpg" alt="" />
+          <img src="./images/carousel1.jpg" id="firstClone" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="story">
+      <div id="storyVideo">
+        <video src="./videos/noodleBowl.mp4" autoplay muted loop></video>
+      </div>
+      <div class="storyText">
+        <h1 id="storyHeader">Eating!</h1>
+        <h1 id="storyHeader">Made Easy.</h1>
+        <p id="storyPara">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+          consectetur illo inventore eligendi saepe nihil sint optio, ut, fugit
+          ab quos obcaecati atque? Beatae qui repellat reiciendis voluptates
+          optio corporis!
+        </p>
+        <br />
+        <p id="storyPara">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quae,
+          impedit nesciunt temporibus magni cupiditate autem vero suscipit
+          molestias dolorum?
+        </p>
+      </div>
+    </section>
+    <section id="menu">
+      <h1>This is Menu</h1>
+    </section>
+    <section id="contact">
+      <h1>This is Contact</h1>
+    </section>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

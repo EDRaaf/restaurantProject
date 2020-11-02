@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "paperFlowers";
+  src: url(./fonts/paperFlowers.ttf);
+}
+
+/* -------Start of Sidebar------- */
+.sidenav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 15vw;
+  align-items: center;
+  background-color: #fffcf9;
+
+  overflow: hidden;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  width: 15vw;
+  padding-bottom: 30px;
+  /* background-color: aliceblue; */
+}
+
+#logo {
+  width: 150px;
+  height: 150px;
+}
+
+.navLinks {
+  /* background-color: rgb(152, 90, 209); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 15vw;
+}
+
+.navLinks ul {
+  /* background-color: cadetblue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 11vw;
+  border-style: solid none;
+  border-width: 3px;
+  border-radius: 5px;
+}
+
+.navLinks li {
+  list-style: none;
+  padding: 30px;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: rgb(29, 29, 29);
+  font-family: "paperFlowers";
+  font-size: 3.5rem;
+  transition: 0.3s;
+}
+
+.navLinks a:hover {
+  font-size: 4rem;
+  color: #ac2020;
+}
+
+.sideNavFooter {
+  display: flex;
+  height: 10vh;
+  width: 15vw;
+  justify-content: center;
+  align-items: flex-end;
+  /*background-color: red;*/
+}
+
+.sideNavFooter p {
+  padding-bottom: 7px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: small;
+  color: #1d1d1d;
+}
+/* -------End of Sidebar------- */
+
+#home,
+#story,
+#contact,
+#menu {
+  display: flex;
+  margin-left: 15vw;
+  height: 100vh;
+  background-color: #ac2020;
+}
+/*-------Start of home-------*/
+#home {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.carousel-container {
+  width: 85vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: relative;
+}
+
+.carousel-slide img {
+  min-width: 85vw;
+  max-width: 85vw;
+  max-height: 100%;
+  object-fit: fill;
+  object-position: center;
+}
+
+#leftSide {
+  position: absolute;
+  z-index: 5;
+  height: 100vh;
+  width: 10%;
+  background-image: linear-gradient(
+    to right,
+    rgba(29, 29, 29, 1),
+    rgba(29, 29, 29, 0)
+  );
+}
+
+#rightSide {
+  position: absolute;
+  z-index: 5;
+  right: 0%;
+  height: 100vh;
+  width: 10%;
+  background-image: linear-gradient(
+    to left,
+    rgba(29, 29, 29, 1),
+    rgba(29, 29, 29, 0)
+  );
+}
+
+#prevBtn {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  font-size: 50px;
+  color: #fffcf9;
+  opacity: 25%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#prevBtn:hover {
+  opacity: 100%;
+  color: #ac2020;
+}
+
+#nextBtn {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  font-size: 50px;
+  color: #fffcf9;
+  opacity: 25%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#nextBtn:hover {
+  opacity: 100%;
+  color: #ac2020;
+}
+/*-------End of home-------*/
+
+/*------Start of story------*/
+#story {
+  position: relative;
+}
+
+#storyVideo {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-content: center;
+  top: 10%;
+  width: 30%;
+  height: 80vh;
+  left: 40px;
+}
+
+#storyVideo video {
+  width: 100%;
+  object-fit: fill;
+  border-radius: 5px;
+}
+
+.storyText {
+  position: absolute;
+  right: 40px;
+  top: 10%;
+  background-color: #fffcf9;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  width: 60%;
+  height: 80vh;
+  padding: 10px;
+}
+
+#storyHeader {
+  font-family: "paperFlowers";
+  font-size: 150px;
+  color: #1d1d1d;
+  text-align: right;
+}
+
+#storyPara {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: #1d1d1d;
+  text-align: justify;
+}
+/*------End of story------*/
