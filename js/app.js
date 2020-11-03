@@ -53,14 +53,3 @@ carouselSlider.addEventListener("transitionend", () => {
     carouselSlider.style.transform = "translateX(" + -size * counter + "px)";
   }
 });
-
-const rendang = {
-  name: "Rendang",
-  price: "AED 40",
-  description: "A spicy beef delicacy from Indonesia.",
-  tags: ["Indonesian", "Spicy", "Non-Vegetarian"],
-};
-
-function x() {
-  document.querySelectorAll("foodName").innerHTML = rendang.name;
-}
