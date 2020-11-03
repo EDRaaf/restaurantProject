@@ -250,6 +250,17 @@ html {
 /*------Start of Menu------*/
 #menu {
   position: relative;
+  justify-content: center;
+}
+
+.menuItemsContainer {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 95%;
+  bottom: 0px;
+  display: flex;
 }
 
 .menuImageWrapper {
@@ -264,7 +275,7 @@ html {
 .menuImageWrapper img {
   max-height: 100%;
   max-width: 100%;
-  object-position: center;
+  object-position: right;
   object-fit: cover;
   border-radius: 5px;
   z-index: 1;
@@ -275,11 +286,10 @@ html {
 }
 
 .menuCard {
-  position: absolute;
-  top: 100px;
-  left: 50px;
+  position: relative;
   background-color: #fffcf9;
   border-radius: 5px;
+  margin: 20px;
   width: 300px;
   height: 300px;
 }
@@ -304,25 +314,23 @@ html {
 .foodOverview {
   position: absolute;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   font-family: paperFlowers;
   font-size: 35px;
+  margin-bottom: 15px;
   top: 20px;
   left: 0px;
 }
 
 .foodOverview h3 {
-  padding: 0px 20px;
+  padding: 0px 10px;
 }
 
 .foodDescription {
-  position: relative;
-  display: flex;
-  align-items: center;
-  text-align: ;
   font-family: "Poppins", sans-serif;
-  width: 250px;
-  height: 150px;
+  padding: 10px;
+  margin: 15px 0px;
 }
 
 .foodTagContainer {
@@ -344,9 +352,10 @@ html {
   font-size: 12px;
   text-align: justify;
   align-items: center;
-  width: auto;
-  height: 30px;
+  max-width: auto;
+  max-height: 40px;
   padding: 8px;
+  margin: 2px;
   border-color: #1d1d1d;
   border-width: 2px;
   border-style: solid;
