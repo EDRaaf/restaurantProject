@@ -255,7 +255,7 @@ html {
 
 .menuItemsContainer {
   position: absolute;
-  display: flex;
+  display: grid;
   justify-content: space-evenly;
   flex-wrap: wrap;
   width: 95%;
@@ -289,7 +289,7 @@ html {
   position: relative;
   background-color: #fffcf9;
   border-radius: 5px;
-  margin: 20px;
+  margin: 3%;
   width: 300px;
   height: 300px;
 }
