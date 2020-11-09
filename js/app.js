@@ -53,3 +53,28 @@ carouselSlider.addEventListener("transitionend", () => {
     carouselSlider.style.transform = "translateX(" + -size * counter + "px)";
   }
 });
+
+//menu filter
+let sortBtn = document.querySelector(".filterMenu").children;
+let sortItem = document.querySelector(".menuItemsContainer").children;
+
+for (let i = 0; i < sortBtn.length; i++) {
+  sortBtn[i].addEventListener("click", function () {
+    for (let j = 0; j < sortBtn.length; j++) {
+      sortBtn[j].classList.remove("current");
+    }
+    this.classList.add("current");
+    let targetData = this.getAttribute("data-target");
+    for (let k = 0; k < sortItem.length; k++) {
+      sortItem[k].classList.add("delete");
+      sortItem[k].classList.remove("active");
+      if (
+        sortItem[k].getAttribute("data-item") == targetData ||
+        targetData == "all"
+      ) {
+        sortItem[k].classList.remove("delete");
+        sortItem[k].classList.add("active");
+      }
+    }
+  });
+}
