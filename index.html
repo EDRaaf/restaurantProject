@@ -827,12 +827,48 @@
           </div>
         </div>
       </div>
+      <br />
     </section>
     <!--End of Menu-->
 
     <!--Start of Contact-->
     <section id="contact">
-      <h1>This is Contact</h1>
+      <div class="contactContainer">
+        <div class="contactTitle">
+          <h1>Contact Us!</h1>
+        </div>
+        <form action="">
+          <h2>Name</h2>
+          <input
+            type="text"
+            name="name"
+            class="formControl"
+            placeholder="Your Name"
+            required
+          />
+          <h2>Email</h2>
+          <input
+            type="text"
+            name="email"
+            class="formControl"
+            placeholder="Your Email"
+            rows="5"
+            required
+          />
+          <h2>Message</h2>
+          <textarea
+            name="message"
+            placeholder="Message"
+            class="formControl"
+            rows="10"
+            required
+          ></textarea>
+        </form>
+        <br />
+        <div id="submitBtn">
+          <input type="submit" class="formControl" value="Send Message" />
+        </div>
+      </div>
     </section>
     <!--End of Contact-->
     <script src="./js/app.js"></script>
